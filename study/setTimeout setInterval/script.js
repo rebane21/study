@@ -3,6 +3,7 @@ let timerId;
 let i = 0;
 
 function myAnimation() {
+    console.log('HELLO WORLD')
     const elem = document.querySelector('.box');
     let pos = 0;
 
