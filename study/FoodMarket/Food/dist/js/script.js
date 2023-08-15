@@ -44,14 +44,14 @@ window.addEventListener('DOMContentLoaded', () => {
     const deadline = '2023-09-11';
 
     function getTimeRemaning(endtime) {
-        const temeDifference = Date.parse(endtime) - Date.parse(new Date()),
-              days = Math.floor(temeDifference / (1000 * 60 * 60 * 24)),
-              hours = Math.floor((temeDifference / (1000 * 60 * 60) % 24)),
-              minutes = Math.floor((temeDifference / 1000 / 60) % 60),
-              seconds = Math.floor((temeDifference / 1000) % 60);
+        const timeDifference = Date.parse(endtime) - Date.parse(new Date()),
+              days = Math.floor(timeDifference / (1000 * 60 * 60 * 24)),
+              hours = Math.floor((timeDifference / (1000 * 60 * 60) % 24)),
+              minutes = Math.floor((timeDifference / 1000 / 60) % 60),
+              seconds = Math.floor((timeDifference / 1000) % 60);
 
         return {
-            'total' : temeDifference,
+            'total' : timeDifference,
             'days' : days,
             'hours' : hours,
             'minutes' : minutes,
